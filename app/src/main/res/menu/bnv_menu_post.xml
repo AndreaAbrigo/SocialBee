@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navLocationFragment"
+        android:title=" "
+        android:icon="@drawable/ic_location"
+        />
+
+    <item
+        android:id="@+id/navShareFragment"
+        android:title=" "
+        android:icon="@drawable/ic_share_black"
+        />
+
+    <item
+        android:id="@+id/navSendFragment"
+        android:title=" "
+        android:icon="@drawable/ic_send_black"
+        />
+
+</menu>

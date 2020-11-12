@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.ShareFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Toolbar
+            android:id="@+id/toolbarShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop">
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/rlContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shareAlto"
+            android:text="@string/share"
+            android:textSize="@dimen/textSize30"
+            android:textColor="@color/primary"
+            android:layout_marginTop="@dimen/marginTopShare"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shareAlto"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginTopIcons"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/widthIcons"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_whatsapp"/>
+
+            <ImageView
+                android:layout_width="@dimen/widthIcons"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_facebook"/>
+
+            <ImageView
+                android:layout_width="@dimen/widthIcons"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gmail"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shareAlto"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginTopIcons"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/widthIcons"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_twitter"/>
+
+            <ImageView
+                android:layout_width="@dimen/widthIcons"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_instagram"/>
+
+            <ImageView
+                android:layout_width="@dimen/widthIcons"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_messenger"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

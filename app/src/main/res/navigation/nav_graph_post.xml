@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_post"
+    app:startDestination="@id/navHomeFragment">
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.example.socialbee.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        app:navGraph="@navigation/nav_graph_post"
+        tools:layout="@layout/fragment_home"
+        app:startDestination="@id/action_homeFragment_to_mapFragment">
+
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/navLocationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_shareFragment"
+            app:destination="@id/navShareFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_messageFragment"
+            app:destination="@id/navSendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navLocationFragment"
+        android:name="com.example.socialbee.view.ui.fragments.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/navShareFragment"
+        android:name="com.example.socialbee.view.ui.fragments.ShareFragment"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/navSendFragment"
+        android:name="com.example.socialbee.view.ui.fragments.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+
+
+</navigation>

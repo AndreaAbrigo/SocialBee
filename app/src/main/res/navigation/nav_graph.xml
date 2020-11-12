@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.example.socialbee.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_home"
+        app:startDestination="@id/action_navHomeFragment_to_itemDetailDialogFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_seachFragment"
+            app:destination="@+id/navSearchFragment" />
+        <action
+            android:id="@+id/action_navHomeFragment_to_itemDetailDialogFragment"
+            app:destination="@id/postDetailDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navSearchFragment"
+        android:name="com.example.socialbee.view.ui.fragments.SeachFragment"
+        android:label="fragment_seach"
+        tools:layout="@layout/fragment_seach" >
+        <action
+            android:id="@+id/action_seachFragment_to_inboxFragment"
+            app:destination="@+id/navInboxFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navInboxFragment"
+        android:name="com.example.socialbee.view.ui.fragments.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+
+    <dialog
+        android:id="@+id/postDetailDialogFragment"
+        android:name="com.example.socialbee.view.ui.fragments.PostDetailDialogFragment"
+        android:label="ItemDetailDialogFragment"
+        tools:layout="@layout/fragment_post_detail_dialog"
+        />
+
+</navigation>

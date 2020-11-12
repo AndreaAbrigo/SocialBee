@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.PostDetailDialogFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop">
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="8dp"
+                android:layout_marginTop="@dimen/detailLayoutMargin"
+                android:layout_marginLeft="@dimen/detailLayoutMargin"
+                android:layout_marginRight="@dimen/detailLayoutMargin"
+                android:layout_marginBottom="@dimen/detailLayoutMargin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivDetailImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/detailImageLayoutHeight"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopImage"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/tvDetailTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/marginTopTexView"
+                        android:textSize="@dimen/textSize30"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_dark"
+                        android:layout_marginRight="@dimen/detailLayoutMargin"
+                        android:layout_marginLeft="@dimen/detailLayoutMargin"/>
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum"
+                        android:gravity="left"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/textSize15"
+                        android:textColor="@color/primary"
+                        android:layout_marginRight="@dimen/detailLayoutMargin"
+                        android:layout_marginLeft="@dimen/detailLayoutMargin"
+                        android:layout_marginTop="@dimen/detailLayoutMargin"
+                        android:layout_marginBottom="@dimen/detailLayoutMargin" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/detailLayoutMargin"
+                        android:layout_marginLeft="@dimen/detailLayoutMargin"
+                        android:layout_marginTop="@dimen/detailLayoutMargin"
+                        android:layout_marginBottom="@dimen/detailLayoutMargin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/post_emisor"
+                            android:layout_marginRight="@dimen/bytMarginRigth"/>
+
+                        <TextView
+                            android:id="@+id/tvUser"
+                            android:text="Usuario"
+                            android:textColor="@color/accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/detailLayoutMargin"
+                        android:layout_marginLeft="@dimen/detailLayoutMargin"
+                        android:layout_marginTop="@dimen/detailLayoutMargin"
+                        android:layout_marginBottom="@dimen/detailLayoutMargin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/post_ubication"
+                            android:layout_marginRight="@dimen/bytMarginRigth"/>
+
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latitude"
+                        android:layout_marginRight="@dimen/bytMarginRigth"/>
+
+                        <TextView
+                            android:id="@+id/tvLatitude"
+                            android:text="Latitud"
+                            android:textColor="@color/accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/bytMarginRigth"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/longitude"
+                            android:layout_marginRight="@dimen/bytMarginRigth"/>
+
+                        <TextView
+                            android:id="@+id/tvLongitude"
+                            android:text="Longitude"
+                            android:textColor="@color/accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/bytMarginRigth"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+    </FrameLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

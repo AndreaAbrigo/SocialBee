@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SocialBee</string>
+    <string name="title_inbox">Mensajes</string>
+    <string name="post_emisor">Por: </string>
+    <string name="home">Inicio</string>
+    <string name="search">Buscar</string>
+    <string name="inbox">Mensajes</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="share">Compartir en</string>
+    <string name="send">Enviar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="newMessage">Nuevo mensaje</string>
+    <string name="post_ubication">Ubicación: </string>
+    <string name="latitude">Lat: </string>
+    <string name="longitude">Lon: </string>
+</resources>

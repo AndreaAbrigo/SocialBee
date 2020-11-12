@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "682463084375",
+    "firebase_url": "https://socialbee-e7f57.firebaseio.com",
+    "project_id": "socialbee-e7f57",
+    "storage_bucket": "socialbee-e7f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682463084375:android:216f2d440504be57e7c812",
+        "android_client_info": {
+          "package_name": "com.example.socialbee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682463084375-77evb6c75pfelt6p3ecqk8nacrdt9apr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialbee",
+            "certificate_hash": "47179267bfe7a6677d4151746c0731239490f766"
+          }
+        },
+        {
+          "client_id": "682463084375-pcvq29eepdafpofipp59obgl1m88mnvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx59MVviYJLI65DZIsWugfu1uhiagKDgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682463084375-pcvq29eepdafpofipp59obgl1m88mnvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

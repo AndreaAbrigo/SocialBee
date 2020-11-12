@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.InboxFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_inbox"
+            android:textSize="@dimen/textSize30"
+            android:textColor="@color/primary_text"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/tituloMarginTop"
+            android:layout_marginBottom="@dimen/tituloMarginBottom"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/primary">
+            <ImageView
+                android:layout_width="@dimen/perfilWidth"
+                android:layout_height="@dimen/perfilHeight"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user_d_foreground"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Germán Godoy"
+                    android:textSize="@dimen/textSize25"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/textMarginTop"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="De nada, saludos."
+                    android:textSize="@dimen/textSize15"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/mensajeMarginTop"
+                    android:layout_marginBottom="@dimen/mensajeMarginBottom"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/primary">
+            <ImageView
+                android:layout_width="@dimen/perfilWidth"
+                android:layout_height="@dimen/perfilHeight"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user_d_foreground"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INTA Casilda"
+                    android:textSize="@dimen/textSize25"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/textMarginTop"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Espero su correo"
+                    android:textSize="@dimen/textSize15"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/mensajeMarginTop"
+                    android:layout_marginBottom="@dimen/mensajeMarginBottom"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/primary">
+            <ImageView
+                android:layout_width="@dimen/perfilWidth"
+                android:layout_height="@dimen/perfilHeight"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user_d_foreground"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ing. Marco"
+                    android:textSize="@dimen/textSize25"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/textMarginTop"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nos comunicamos el lunes"
+                    android:textSize="@dimen/textSize15"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/mensajeMarginTop"
+                    android:layout_marginBottom="@dimen/mensajeMarginBottom"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/primary">
+            <ImageView
+                android:layout_width="@dimen/perfilWidth"
+                android:layout_height="@dimen/perfilHeight"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user_d_foreground"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dulce nectar"
+                    android:textSize="@dimen/textSize25"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/textMarginTop"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gracias"
+                    android:textSize="@dimen/textSize15"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/mensajeMarginTop"
+                    android:layout_marginBottom="@dimen/mensajeMarginBottom"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/primary">
+            <ImageView
+                android:layout_width="@dimen/perfilWidth"
+                android:layout_height="@dimen/perfilHeight"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user_d_foreground"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INTA CdelU"
+                    android:textSize="@dimen/textSize25"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/textMarginTop"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puede llamar al 03442 425274"
+                    android:textSize="@dimen/textSize15"
+                    android:gravity="left"
+                    android:textColor="@color/primary_light"
+                    android:layout_marginTop="@dimen/mensajeMarginTop"
+                    android:layout_marginBottom="@dimen/mensajeMarginBottom"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

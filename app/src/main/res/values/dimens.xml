@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatartWidth">50sp</dimen>
+    <dimen name="avatarHeight">50sp</dimen>
+    <dimen name="avatarWidth">70dp</dimen>
+    <dimen name="uno">1sp</dimen>
+</resources>
